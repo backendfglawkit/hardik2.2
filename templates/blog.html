@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content_1 %}
+
+    <div class="section-header mt-5">
+      <h2>{{name}}</h2>
+    </div>
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 posts-list">
+{% for i in blog_Data | reverse %}
+          <div class="col-xl-4 col-md-6">
+            <article>
+
+              <div class="post-img">
+                <img src="{{i['Image_link']}}" alt="" class="img-fluid">
+              </div>
+
+              <!-- <p class="post-category">Politics</p> -->
+
+              <h2 class="title">
+                <a href="/{{type}}/{{i['_id']}}">{{i['title']}}</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <!-- <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0"> -->
+                <div class="post-meta">
+                  <!-- <p class="post-author-list">Maria Doe</p> -->
+                  <p class="post-date">
+                    <time datetime="2022-01-01">{{i['date']}}</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          
+          </div><!-- End post list item -->
+          {% endfor %}
+        </div><!-- End blog posts list -->
+
+        
+
+      </div>
+    </section><!-- End Blog Section -->
+
+    {% endblock content_1 %}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rudrax</title>
+  <link rel = "icon" href = 
+"static/image/WhatsApp Image 2023-08-25 at 12.36.55.png" 
+        type = "image/x-icon">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/images/favicon.png" rel="icon">
+  <link href="static/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/bootstrap-icons.svg" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:rudrakshaenterprises5501@gmail.com">Rudrakshaenterprises5501@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span> <a href="https://wa.me/918949711067" target="_blank" rel="noopener noreferrer">+91 8949711067</a>
+        </span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://instagram.com/rudrakshh.india?igshid=MzRlODBiNWFlZA==" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{{ url_for('static', filename='images/logo.svg') }}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+        <h1>Rudrax<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#notabout">About</a></li>
+          <li><a href="/#services">Features</a></li>
+          <li><a href="/#portfolio">Product</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/Rudrax-culture">Rudrax Culture</a></li>
+          <li><a href="/journey">Our Journey</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    
+
+   
+    {% block content_1 %}
+
+    
+    {% endblock content_1 %}
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="{{ url_for('static', filename='images/logo.svg') }}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+            <span>Rudrax</span>
+          </a>
+           
+          <p>Rudraksh Enterprises, is one of the fastest and youngest growing
+            company, involved in the manufacturing, supplying, distribution of
+            Battery Scrap Recycled Plastic Granules, PPCP Granules.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://instagram.com/rudrakshh.india?igshid=MzRlODBiNWFlZA==" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <b><li><a href="/">Home</a></li></b>
+            <b><li></li></b>
+            <b><li><a href="/#notabout">About us</a></li></b>
+            <b><li></li></b>
+            <b><li><a href="blog">Blog</a></li></b>
+
+
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+           H-1,430 SARNA DUNGAR INDUSTRIAL AREA<br>
+            JHOTWARA EXT, JAIPUR<br>
+            RAJASTHAN, INDIA <br><br>
+            <strong>Phone:</strong><a href="https://wa.me/918949711067" target="_blank" rel="noopener noreferrer" style="color:#000000;">+91 8949711067</a><br>
+            <strong>Email:</strong><a href="mailto:rudrakshaenterprises5501@gmail.com" style="color:#000000;">Rudrakshaenterprises5501@gmail.com</a><br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Rudrakash Enterprises</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+         Designed by <a href="https://aimthecreator.com/"><u>Aim The Creator</u></a>
+      </div>
+    </div>
+
+  </footer>
+  
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content_1 %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+</head>
+<body>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in records |reverse %}
+                <tr>
+                    <td>{{ record.name }}</td>
+                    <td>{{ record.phone }}</td>
+                    <td>{{ record.email }}</td>
+                    <td>{{ record.Subject }}</td>
+                    <td>{{ record.message }}</td>
+                    <td>{{ record.date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href='dashboard'>go back</a>
+</body>
+</html>
+
+
+{% endblock %}

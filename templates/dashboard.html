@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% block content_1 %}
+
+<center>
+    <h2>Dashboard</h2>
+    <a href="add_blog"><button class="submit-btn" type="submit">Add blog</button></a>
+    <a href="add_Product"><button class="submit-btn" type="submit">Add Product</button></a>
+    <a href="/add_culture"><button class="submit-btn" type="submit">Add culture</button></a>
+    <a href="/view_contact"><button class="submit-btn" type="submit">Contact Form</button></a>
+    <a href="/logout"><button class="submit-btn" type="submit">Logout</button></a>
+</center>
+
+<br>
+<hr>
+<h2>blog list</h2>
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <!-- <th>Sub-title</th> -->
+            <!-- <th>Discription</th> -->
+            <th>Image Link</th>
+            <th>Video Link</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in data %}
+        <tr>
+            <td>{{ item['title'] }}</td>
+            <!-- <td>{{ item['sub-title'] }}</td> -->
+            <!-- <td>{{ item['dic'] }}</td> -->
+            <td><a href="{{ item['Image_link'] }}" >Image Link</a></td>
+            <td><a href="{{ item['Video_link'] }}" >Video Link</a></td>
+            <td><a href="blog/del/{{ item['_id'] }}" >Delete</a></td>
+
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<hr>
+
+
+<h2>Culture list</h2>
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <!-- <th>Sub-title</th> -->
+            <!-- <th>Discription</th> -->
+            <th>Image Link</th>
+            <th>Video Link</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in culture_list %}
+        <tr>
+            <td>{{ item['title'] }}</td>
+            <!-- <td>{{ item['sub-title'] }}</td> -->
+            <!-- <td>{{ item['dic'] }}</td> -->
+            <td><a href="{{ item['Image_link'] }}" >Image Link</a></td>
+            <td><a href="{{ item['Video_link'] }}" >Video Link</a></td>
+            <td><a href="culture/del/{{ item['_id'] }}" >Delete</a></td>
+
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<hr>
+
+    <style>
+        .odd-row {
+            background-color: #f2f2f2; /* Define the background color for odd rows */
+        }
+
+        .even-row {
+            background-color: #ffffff; /* Define the background color for even rows */
+        }
+    </style>
+    
+    <h2>all--product</h2>
+    <table class="table table-bordered table-dark">
+    
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Image Link</th>
+            <th>Delete</th>
+        </tr>
+    
+        {% for k in d2['data_list'] %}
+        <tr class="loop2">
+            <td>{{k['title']}}</td>
+            <td>{{k['dic']}}</td>
+            <td>{{k['Image_link']}}</td>
+            <td><a href="del/product/{{k['title']}}/ppcp" >delete</a></td>
+        </tr>
+        {% endfor %}
+        {% for k in d3['data_list'] %}
+        <tr class="loop3">
+            <td>{{k['title']}}</td>
+            <td>{{k['dic']}}</td>
+            <td>{{k['Image_link']}}</td>
+            <td><a href="del/product/{{k['title']}}/pp" >delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #CCFFCC; display: inline-block; margin: 10px; text-align: center; line-height: 50px;">
+        <span style="color: rgb(0, 0, 0);">ppcp</span>
+    </div>
+
+    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #CCCCFF; display: inline-block; margin: 10px; text-align: center; line-height: 50px;">
+        <span style="color: rgb(0, 0, 0);">pp</span>
+    </div>
+    <style>
+        .loop1 {
+            background-color: #FFCCCC; /* Light Red */
+        }
+    
+        .loop2 {
+            background-color: #CCFFCC; /* Light Green */
+        }
+    
+        .loop3 {
+            background-color: #CCCCFF; /* Light Blue */
+        }
+    </style>
+    <hr>
+    {% endblock %}

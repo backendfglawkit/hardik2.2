@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content_1 %}
+    <h2>Add Blog</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+            {{form.radio()}}
+
+            {{ form.title.label }}
+            {{ form.title }}
+        
+            {{ form.Image_link.label }}
+            {{ form.Image_link }}
+        
+            {{ form.dis.label }}
+            {{ form.dis }}
+
+            {{ form.submit }}
+        
+        
+    </form>
+    <p><a href="/dashboard">Go back</a></p>
+{% endblock %}
+
+{% block styles %}
+</style>
+{% endblock %}
