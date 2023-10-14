@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'sdfgeujkfh@nfjsduifdhe3^%$fhjsdfdsjf#$%#$rjkhjvhhdvdfhnjdmfldsjfsefjsif%^$^%#^%#$%#$fdkhkjfsaioudhyusjdisoadsdisadasdsdk'
 
 #database
-y='mongodb://localhost:27017'
+
 x='mongodb+srv://rudrakshaimthecreator:Rudrakshatc123@cluster0.fpkatq1.mongodb.net/?retryWrites=true&w=majority'
 client= pymongo.MongoClient(x)
 db=client['rudrakash']
