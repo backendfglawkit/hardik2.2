@@ -1442,6 +1442,7 @@ section {
 .footer .footer-info p {
   font-size: 14px;
   font-family: var(--font-primary);
+  text-align: left;
 }
 
 .footer .social-links a {
@@ -1456,6 +1457,7 @@ section {
   color: rgba(0, 0, 0, 0.7);
   margin-right: 10px;
   transition: 0.3s;
+  
 }
 
 .footer .social-links a:hover {
@@ -1468,6 +1470,7 @@ section {
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
+  text-align: left;
 }
 
 .footer .footer-links {
