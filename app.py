@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = 'sdfgeujkfh@nfjsduifdhe3^%$fhjsdfdsjf#$%#$rjkhjvhhdvd
 
 #database
 
-x='mongodb+srv://rudrakshaimthecreator:Rudrakshatc123@cluster0.fpkatq1.mongodb.net/?retryWrites=true&w=majority'
+x='mongodb+srv://theaimcreator:archit123@database1.lnveyjh.mongodb.net/?retryWrites=true&w=majority'
 client= pymongo.MongoClient(x)
 db=client['rudrakash']
 
